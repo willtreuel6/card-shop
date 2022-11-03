@@ -20,3 +20,8 @@ export interface IContact{
     state: string,
     zip: string
 }
+
+export interface IUser{
+    email: string;
+    password: string;
+}
