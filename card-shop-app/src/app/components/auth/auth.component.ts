@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-auth',
@@ -7,9 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private authService: AuthService, private router : Router, private formBuilder: FormBuilder) { }
+  
+  storeName : string = "Rochester Card Shop"
+  authForm!: FormGroup;
+  isSubmitted = false
   ngOnInit(): void {
+    this.authForm = this.formBuilder.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required]
+    });
+  }
+
+  get formControls(){return this.authForm.controls;}
+
+  signIn(){
+    this.isSubmitted = true;
+    if(this.authForm.invalid){
+      return;
+    }
+    this.authService.signIn(this.authForm.value);
+    this.router.navigateByUrl('/admin')
   }
 
 }
