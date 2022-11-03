@@ -1,0 +1,52 @@
+{
+    "boxes" : [
+        {
+            "id":1,
+            "name":"2022 Topps Chrome Baseball",
+            "year":"2022",
+            "sport":"baseball",
+            "price": 199.99,
+            "inStock":"yes"
+        },
+        {
+            "id":2,
+            "name":"2022 Topps Triple Threads Football",
+            "year":"2022",
+            "sport":"Football",
+            "price": 249.99,
+            "inStock":"yes"
+        },
+        {
+            "id":3,
+            "name":"2022 Panini Prizm UFC",
+            "year":"2022",
+            "sport":"ufc",
+            "price": 549.99,
+            "inStock":"no"
+        },
+        {
+            "id":1,
+            "name":"2021 Donruss Elite Baseball",
+            "year":"2021",
+            "sport":"baseball",
+            "price": 99.99,
+            "inStock":"yes"
+        }
+    ],
+    "about": [
+        {
+            "name":"Rochester Card Company",
+            "description":"Local card shop that loves serving the Rochester community"
+        }
+    ],
+    "contact":[
+        {
+            "phone":"603-998-6741",
+            "email":"rochestercards@gmail.com",
+            "address":"10 spaulding Tpke",
+            "city":"Rochester",
+            "state":"New Hampshire",
+            "zip":"03867"
+        }
+    ]
+}
