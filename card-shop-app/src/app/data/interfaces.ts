@@ -4,7 +4,8 @@ export interface IBox{
     year: string,
     sport: string,
     price: number,
-    inStock: string
+    inStock: string,
+    background_image: string
 }
 
 export interface IAbout{

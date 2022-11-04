@@ -4,6 +4,7 @@ import { IBox } from 'src/app/data/interfaces';
 import { BackendService } from 'src/app/services/backend.service';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

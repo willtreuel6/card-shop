@@ -21,6 +21,10 @@ export class InventoryComponent implements OnInit {
   ngOnInit(): void {
     this.boxes = this.backendService.getBoxes();
   }
+
+  openItemDetails(id: number){
+    console.log("Open Item details")
+  }
   
 
   

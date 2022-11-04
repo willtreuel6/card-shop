@@ -15,4 +15,5 @@ export class AdminComponent implements OnInit {
     this.authService.logout();
     this.router.navigateByUrl('/auth');
   }
+  
 }

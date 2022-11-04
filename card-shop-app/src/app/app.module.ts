@@ -16,6 +16,7 @@ import { AuthComponent } from './components/auth/auth.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatToolbarModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

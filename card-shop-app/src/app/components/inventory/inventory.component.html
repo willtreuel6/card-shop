@@ -1,8 +1,27 @@
 <div class="inventory">
     <ng-container *ngFor="let box of boxes">
-        <p class="items-inventory">
-            {{box.name}}
-        </p>
+        <div class="item" (click)="openItemDetails(box.id)">
+            <div class="item-thumb-container">
+                <img
+                *ngIf="box.background_image"
+                src="{{box.background_image}}"
+                alt="thumbnail"
+                class="item-thumbnail"
+                />
+           
+            <p *ngIf="!box.background_image">No Image Available</p>
+            </div>
+            <div class="item-description">
+                <p class="item-name">{{box.name}}</p>
+                <div class="item-sports">
+                    <img
+                        class="item-sport"
+                        src="./images/{{box.sport}}.svg"
+                        alt="baseball"
+                    />
+                </div>
+            </div>
+        </div>
     </ng-container>
 </div>
 
