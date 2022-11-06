@@ -14,6 +14,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 
 
@@ -36,7 +40,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,
-  ],
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
